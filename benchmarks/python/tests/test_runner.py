@@ -13,12 +13,21 @@ class RunnerTests(unittest.TestCase):
         checksum = json_parse_transform(100)
         self.assertEqual(checksum, sum(i % 17 for i in range(100)))
 
-    def test_run_produces_two_records(self) -> None:
+    def test_run_produces_full_matrix(self) -> None:
         data = run()
-        self.assertEqual(len(data), 2)
+        self.assertEqual(len(data), 8)
         self.assertEqual(
             {d["benchmark_id"] for d in data},
-            {"cpu_monte_carlo_pi", "string_json_parse_transform"},
+            {
+                "cpu_monte_carlo_pi",
+                "string_json_parse_transform",
+                "io_concurrent_http_client",
+                "data_pipeline_etl_minibatch",
+                "dependency_vulnerability_scan_scorecard",
+                "static_security_lint_benchmark",
+                "test_robustness_reliability",
+                "build_startup_feedback_loop",
+            },
         )
 
 

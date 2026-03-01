@@ -5,25 +5,25 @@
     "language": "python",
     "variant": {
       "runtime": "cpython",
-      "version": "3.10.19"
+      "version": "3.13.9"
     },
     "environment": {
-      "os": "Linux-6.12.47-x86_64-with-glibc2.39",
-      "cpu_count": 3
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
     },
     "metrics": {
       "runtime_seconds": {
-        "value": 0.06297004299995024,
+        "value": 0.09583755799985738,
         "unit": "s"
       },
       "pi_estimate": {
-        "value": 3.13974,
+        "value": 3.13846,
         "unit": "ratio"
       }
     },
-    "timestamp": "2026-02-28T20:52:00.387230+00:00",
-    "commit_sha": "5947171",
-    "run_id": "d1c0ca28-c0b9-4535-abc7-2a736ee374ba"
+    "timestamp": "2026-03-01T02:48:01.358159+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
   },
   {
     "benchmark_id": "string_json_parse_transform",
@@ -31,15 +31,15 @@
     "language": "python",
     "variant": {
       "runtime": "cpython",
-      "version": "3.10.19"
+      "version": "3.13.9"
     },
     "environment": {
-      "os": "Linux-6.12.47-x86_64-with-glibc2.39",
-      "cpu_count": 3
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
     },
     "metrics": {
       "runtime_seconds": {
-        "value": 0.14330958999994436,
+        "value": 0.018869147000259545,
         "unit": "s"
       },
       "checksum": {
@@ -47,8 +47,244 @@
         "unit": "count"
       }
     },
-    "timestamp": "2026-02-28T20:52:00.395793+00:00",
-    "commit_sha": "5947171",
-    "run_id": "b2f7b92c-e27a-4a61-ad37-a444f9f66cc5"
+    "timestamp": "2026-03-01T02:48:01.359695+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
+  },
+  {
+    "benchmark_id": "io_concurrent_http_client",
+    "category": "performance",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.13.9"
+    },
+    "environment": {
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 2.13963493700021,
+        "unit": "s"
+      },
+      "requests_completed": {
+        "value": 400.0,
+        "unit": "count"
+      },
+      "checksum": {
+        "value": 3164.0,
+        "unit": "count"
+      },
+      "request_errors": {
+        "value": 0.0,
+        "unit": "count"
+      }
+    },
+    "timestamp": "2026-03-01T02:48:01.361352+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
+  },
+  {
+    "benchmark_id": "data_pipeline_etl_minibatch",
+    "category": "performance",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.13.9"
+    },
+    "environment": {
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.0201856300000145,
+        "unit": "s"
+      },
+      "records_processed": {
+        "value": 20000.0,
+        "unit": "count"
+      },
+      "aggregate_value": {
+        "value": 10000000.0,
+        "unit": "count"
+      },
+      "throughput_mb_s": {
+        "value": 8.137562113840932,
+        "unit": "mb/s"
+      }
+    },
+    "timestamp": "2026-03-01T02:48:01.362884+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
+  },
+  {
+    "benchmark_id": "dependency_vulnerability_scan_scorecard",
+    "category": "security",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.13.9"
+    },
+    "environment": {
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 15.476844779000203,
+        "unit": "s"
+      },
+      "vulnerability_findings": {
+        "value": 14.0,
+        "unit": "count"
+      },
+      "outdated_dependencies": {
+        "value": 123.0,
+        "unit": "count"
+      },
+      "audit_exit_code": {
+        "value": 1.0,
+        "unit": "code"
+      },
+      "outdated_exit_code": {
+        "value": 0.0,
+        "unit": "code"
+      },
+      "tool_available": {
+        "value": 1.0,
+        "unit": "flag"
+      },
+      "scan_errors": {
+        "value": 0.0,
+        "unit": "count"
+      }
+    },
+    "timestamp": "2026-03-01T02:48:16.841199+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
+  },
+  {
+    "benchmark_id": "static_security_lint_benchmark",
+    "category": "security",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.13.9"
+    },
+    "environment": {
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.18045341099968937,
+        "unit": "s"
+      },
+      "finding_count": {
+        "value": 6.0,
+        "unit": "count"
+      },
+      "high_findings": {
+        "value": 0.0,
+        "unit": "count"
+      },
+      "medium_findings": {
+        "value": 0.0,
+        "unit": "count"
+      },
+      "low_findings": {
+        "value": 6.0,
+        "unit": "count"
+      },
+      "lint_exit_code": {
+        "value": 1.0,
+        "unit": "code"
+      },
+      "tool_available": {
+        "value": 1.0,
+        "unit": "flag"
+      },
+      "scan_errors": {
+        "value": 0.0,
+        "unit": "count"
+      }
+    },
+    "timestamp": "2026-03-01T02:48:17.023127+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
+  },
+  {
+    "benchmark_id": "test_robustness_reliability",
+    "category": "quality",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.13.9"
+    },
+    "environment": {
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.13547276500003136,
+        "unit": "s"
+      },
+      "iterations": {
+        "value": 3.0,
+        "unit": "count"
+      },
+      "failed_iterations": {
+        "value": 0.0,
+        "unit": "count"
+      },
+      "flaky_rate": {
+        "value": 0.0,
+        "unit": "ratio"
+      }
+    },
+    "timestamp": "2026-03-01T02:48:17.161415+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
+  },
+  {
+    "benchmark_id": "build_startup_feedback_loop",
+    "category": "quality",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.13.9"
+    },
+    "environment": {
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "cpu_count": 24
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.02888388399969699,
+        "unit": "s"
+      },
+      "build_seconds": {
+        "value": 0.019298091000109707,
+        "unit": "s"
+      },
+      "startup_seconds": {
+        "value": 0.009342104000097606,
+        "unit": "s"
+      },
+      "artifact_size_kb": {
+        "value": 30.8740234375,
+        "unit": "kb"
+      },
+      "operation_errors": {
+        "value": 0.0,
+        "unit": "count"
+      }
+    },
+    "timestamp": "2026-03-01T02:48:17.191923+00:00",
+    "commit_sha": "a13f208",
+    "run_id": "e3a8a1ea-3ad3-42c8-8e58-b5f480a27a64"
   }
 ]

@@ -16,14 +16,18 @@
       <section class="card">
         <h2>Summary</h2>
         <div id="summary" class="summary-grid" aria-live="polite"></div>
+        <h3>Category Breakdown</h3>
+        <div id="category-summary" class="summary-grid" aria-live="polite"></div>
       </section>
 
       <section class="card">
         <h2>Benchmark Comparison</h2>
         <p class="hint">Lower runtime is better for performance benchmarks.</p>
+        <div id="category-tabs" class="tabs" role="tablist" aria-label="Benchmark categories"></div>
         <table>
           <thead>
             <tr>
+              <th>Category</th>
               <th>Benchmark</th>
               <th>Python runtime (s)</th>
               <th>Rust runtime (s)</th>

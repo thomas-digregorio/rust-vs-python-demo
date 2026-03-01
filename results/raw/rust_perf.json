@@ -1,1 +1,290 @@
-[{"benchmark_id":"cpu_monte_carlo_pi","category":"performance","language":"rust","variant":{"runtime":"rust","version":"0.1.0"},"environment":{"os":"linux","cpu_count":2},"metrics":{"runtime_seconds":{"value":0.00523646,"unit":"s"},"pi_estimate":{"value":3.13846,"unit":"ratio"}},"timestamp":"1970-01-01T00:00:00+00:00","commit_sha":"5947171","run_id":"rust-run"},{"benchmark_id":"string_json_parse_transform","category":"performance","language":"rust","variant":{"runtime":"rust","version":"0.1.0"},"environment":{"os":"linux","cpu_count":2},"metrics":{"runtime_seconds":{"value":0.000297722,"unit":"s"},"checksum":{"value":159964,"unit":"count"}},"timestamp":"1970-01-01T00:00:00+00:00","commit_sha":"5947171","run_id":"rust-run"}]
+[
+  {
+    "benchmark_id": "cpu_monte_carlo_pi",
+    "category": "performance",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "pi_estimate": {
+        "unit": "ratio",
+        "value": 3.13846
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 0.001708956
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:22.531502951+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  },
+  {
+    "benchmark_id": "string_json_parse_transform",
+    "category": "performance",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "checksum": {
+        "unit": "count",
+        "value": 159964.0
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 0.02826072
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:22.593992203+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  },
+  {
+    "benchmark_id": "io_concurrent_http_client",
+    "category": "performance",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "checksum": {
+        "unit": "count",
+        "value": 3164.0
+      },
+      "request_errors": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "requests_completed": {
+        "unit": "count",
+        "value": 400.0
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 2.090468454
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:24.724695498+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  },
+  {
+    "benchmark_id": "data_pipeline_etl_minibatch",
+    "category": "performance",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "aggregate_value": {
+        "unit": "count",
+        "value": 10000000.0
+      },
+      "records_processed": {
+        "unit": "count",
+        "value": 20000.0
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 0.029226692
+      },
+      "throughput_mb_s": {
+        "unit": "mb/s",
+        "value": 5.620267183577564
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:24.789018716+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  },
+  {
+    "benchmark_id": "dependency_vulnerability_scan_scorecard",
+    "category": "security",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "audit_exit_code": {
+        "unit": "code",
+        "value": 0.0
+      },
+      "outdated_dependencies": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "outdated_exit_code": {
+        "unit": "code",
+        "value": 0.0
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 2.532059377
+      },
+      "scan_errors": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "tool_available": {
+        "unit": "flag",
+        "value": 1.0
+      },
+      "vulnerability_findings": {
+        "unit": "count",
+        "value": 0.0
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:27.354761982+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  },
+  {
+    "benchmark_id": "static_security_lint_benchmark",
+    "category": "security",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "finding_count": {
+        "unit": "count",
+        "value": 1.0
+      },
+      "high_findings": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "lint_exit_code": {
+        "unit": "code",
+        "value": 0.0
+      },
+      "low_findings": {
+        "unit": "count",
+        "value": 1.0
+      },
+      "medium_findings": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 1.806813582
+      },
+      "scan_errors": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "tool_available": {
+        "unit": "flag",
+        "value": 1.0
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:29.199610317+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  },
+  {
+    "benchmark_id": "test_robustness_reliability",
+    "category": "quality",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "failed_iterations": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "flaky_rate": {
+        "unit": "ratio",
+        "value": 0.0
+      },
+      "iterations": {
+        "unit": "count",
+        "value": 3.0
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 1.074025316
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:30.307376343+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  },
+  {
+    "benchmark_id": "build_startup_feedback_loop",
+    "category": "quality",
+    "commit_sha": "a13f208",
+    "environment": {
+      "cpu_count": 24,
+      "os": "linux"
+    },
+    "language": "rust",
+    "metrics": {
+      "artifact_size_kb": {
+        "unit": "kb",
+        "value": 10103.796875
+      },
+      "build_seconds": {
+        "unit": "s",
+        "value": 0.050348118
+      },
+      "operation_errors": {
+        "unit": "count",
+        "value": 0.0
+      },
+      "runtime_seconds": {
+        "unit": "s",
+        "value": 0.051169469
+      },
+      "startup_seconds": {
+        "unit": "s",
+        "value": 0.000808395
+      }
+    },
+    "run_id": "rust-68527-1772333302497",
+    "timestamp": "2026-03-01T02:48:30.393526550+00:00",
+    "variant": {
+      "runtime": "rust",
+      "version": "rustc 1.93.1 (01f6ddf75 2026-02-11)"
+    }
+  }
+]

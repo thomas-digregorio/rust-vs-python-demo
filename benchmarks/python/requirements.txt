@@ -1,1 +1,2 @@
-# No third-party Python dependencies required for phase-0 foundation.
+pip-audit>=2.8,<3
+bandit>=1.8,<2
