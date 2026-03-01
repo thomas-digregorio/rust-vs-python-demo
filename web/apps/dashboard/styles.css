@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+  background: #f4f6fb;
+  color: #101828;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background: linear-gradient(120deg, #0f172a, #1d4ed8);
+  color: #fff;
+  padding: 1.75rem 2rem;
+}
+
+.page-header h1 {
+  margin: 0 0 0.35rem;
+}
+
+.layout {
+  padding: 1.5rem 2rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.15);
+  padding: 1rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+.metric-box {
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  padding: 0.65rem;
+}
+
+.metric-box .label {
+  color: #475467;
+  font-size: 0.9rem;
+}
+
+.metric-box .value {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.hint {
+  margin-top: 0;
+  color: #475467;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #eaecf0;
+  text-align: left;
+  padding: 0.65rem;
+}
+
+.winner-rust {
+  color: #027a48;
+  font-weight: 600;
+}
+
+.winner-python {
+  color: #b54708;
+  font-weight: 600;
+}
+
+.raw {
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 10px;
+  padding: 0.8rem;
+  max-height: 280px;
+  overflow: auto;
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/benchmark-result.schema.json",
+  "title": "BenchmarkResult",
+  "type": "object",
+  "required": [
+    "benchmark_id",
+    "category",
+    "language",
+    "variant",
+    "environment",
+    "metrics",
+    "timestamp",
+    "commit_sha",
+    "run_id"
+  ],
+  "properties": {
+    "benchmark_id": { "type": "string", "minLength": 1 },
+    "category": { "enum": ["performance", "security", "quality"] },
+    "language": { "enum": ["python", "rust"] },
+    "variant": {
+      "type": "object",
+      "required": ["runtime", "version"],
+      "properties": {
+        "runtime": { "type": "string" },
+        "version": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "environment": {
+      "type": "object",
+      "required": ["os", "cpu_count"],
+      "properties": {
+        "os": { "type": "string" },
+        "cpu_count": { "type": "integer", "minimum": 1 },
+        "memory_mb": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "unit"],
+        "properties": {
+          "value": { "type": "number" },
+          "unit": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "commit_sha": { "type": "string", "minLength": 7 },
+    "run_id": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": false
+}
