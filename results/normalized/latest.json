@@ -1,0 +1,106 @@
+[
+  {
+    "benchmark_id": "cpu_monte_carlo_pi",
+    "category": "performance",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.10.19"
+    },
+    "environment": {
+      "os": "Linux-6.12.47-x86_64-with-glibc2.39",
+      "cpu_count": 3
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.06297004299995024,
+        "unit": "s"
+      },
+      "pi_estimate": {
+        "value": 3.13974,
+        "unit": "ratio"
+      }
+    },
+    "timestamp": "2026-02-28T20:52:00.387230+00:00",
+    "commit_sha": "5947171",
+    "run_id": "d1c0ca28-c0b9-4535-abc7-2a736ee374ba"
+  },
+  {
+    "benchmark_id": "string_json_parse_transform",
+    "category": "performance",
+    "language": "python",
+    "variant": {
+      "runtime": "cpython",
+      "version": "3.10.19"
+    },
+    "environment": {
+      "os": "Linux-6.12.47-x86_64-with-glibc2.39",
+      "cpu_count": 3
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.14330958999994436,
+        "unit": "s"
+      },
+      "checksum": {
+        "value": 159964.0,
+        "unit": "count"
+      }
+    },
+    "timestamp": "2026-02-28T20:52:00.395793+00:00",
+    "commit_sha": "5947171",
+    "run_id": "b2f7b92c-e27a-4a61-ad37-a444f9f66cc5"
+  },
+  {
+    "benchmark_id": "cpu_monte_carlo_pi",
+    "category": "performance",
+    "language": "rust",
+    "variant": {
+      "runtime": "rust",
+      "version": "0.1.0"
+    },
+    "environment": {
+      "os": "linux",
+      "cpu_count": 2
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.00523646,
+        "unit": "s"
+      },
+      "pi_estimate": {
+        "value": 3.13846,
+        "unit": "ratio"
+      }
+    },
+    "timestamp": "1970-01-01T00:00:00+00:00",
+    "commit_sha": "5947171",
+    "run_id": "rust-run"
+  },
+  {
+    "benchmark_id": "string_json_parse_transform",
+    "category": "performance",
+    "language": "rust",
+    "variant": {
+      "runtime": "rust",
+      "version": "0.1.0"
+    },
+    "environment": {
+      "os": "linux",
+      "cpu_count": 2
+    },
+    "metrics": {
+      "runtime_seconds": {
+        "value": 0.000297722,
+        "unit": "s"
+      },
+      "checksum": {
+        "value": 159964,
+        "unit": "count"
+      }
+    },
+    "timestamp": "1970-01-01T00:00:00+00:00",
+    "commit_sha": "5947171",
+    "run_id": "rust-run"
+  }
+]

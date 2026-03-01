@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rust vs Python Benchmark Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Rust vs Python Benchmark Dashboard</h1>
+      <p>Phase-0 results viewer for normalized benchmark outputs.</p>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <h2>Summary</h2>
+        <div id="summary" class="summary-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="card">
+        <h2>Benchmark Comparison</h2>
+        <p class="hint">Lower runtime is better for performance benchmarks.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Benchmark</th>
+              <th>Python runtime (s)</th>
+              <th>Rust runtime (s)</th>
+              <th>Winner</th>
+              <th>Speedup</th>
+            </tr>
+          </thead>
+          <tbody id="benchmark-table"></tbody>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>Raw Records</h2>
+        <pre id="raw-output" class="raw"></pre>
+      </section>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
